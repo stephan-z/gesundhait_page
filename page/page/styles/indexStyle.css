@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #3d4343;
+    font-family: "Garamond", Comic-Sans, serif;
+    color: #eff0f1;
+    overflow-y: hidden;
+}
+
+#site{
+    background-color: #313636;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    left: 15%;
+    right: 15%;
+    border-radius: 10px;
+}
+
+#content{
+    background-color: #313636;
+    text-align: center;
+    position: relative;
+    top: 48px;
+    padding: 20px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+#actionbar{
+    background-color: #242828; /* NOTE: Farbe der Navigation Bar */
+    text-align: center;
+    position: relative;
+    width: 100%; /* NOTE: Ganze Breite der Seite */
+    height: 48px; /* NOTE: Abhängig von grösse des Textes der li's */
+    z-index: 1;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+#actionbar ul{
+    display: inline-block; /* NOTE: Zum zentrieren der li's; nur bei vertikaler anordnung*/
+    list-style-type: none; /* NOTE: Kein Aufzählungszeichen */
+    overflow: hidden;
+    height: inherit;
+}
+
+#actionbar li{
+    float: left; /* NOTE: li's vertikal anordnen */
+    height: inherit;
+}
+
+#actionbar li h2{
+    padding: 10px;
+}
+
+#actionbar li img{
+    height: inherit;
+}
+
+#actionbar li a {
+    display: block;
+    color: #eff0f1;
+    text-align: center;
+    height: inherit;
+    width: 60px;
+    padding: 4px 16px;
+    text-decoration: none; /* NOTE: Keine Hyperlink hilighting */
+}
+
+#actionbar li a img{
+    height: 40px;
+}
+
+#actionbar li a:hover:not(.navigationActive){
+    background-color: #3daee9;
+}
+
+.navigationActive{
+    background-color: #4caf50;
+}
