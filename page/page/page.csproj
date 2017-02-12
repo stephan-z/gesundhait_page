@@ -47,17 +47,10 @@
     <Content Include="styles\indexStyle.css" />
     <Content Include="styles\viewHomeStyle.css" />
     <Content Include="views\viewHome.html" />
-    <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="scripts\angular\errors.json" />
     <Content Include="scripts\angular\version.json" />
-    <None Include="web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
-    <None Include="web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
